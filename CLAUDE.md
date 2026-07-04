@@ -6,6 +6,8 @@ FleetOS AI is an enterprise-grade, AI-powered Fleet Management ERP for the **US 
 
 Competitors to beat on UX and capability: Samsara, Motive, Geotab, Fleetio, AscendTMS.
 
+**`Features.md` is the complete, canonical feature list** — every module and feature with phase mapping and build status (checkboxes). Consult it before scoping any work; update its checkboxes when features ship. `DEVELOPMENT_PLAN.md` says *when*, `Features.md` says *what*.
+
 **Current scope: WEB APP ONLY.** Mobile apps (driver app, etc.) are deferred to a later phase. Do not build React Native / mobile code unless explicitly asked. Design APIs so a mobile client can consume them later.
 
 ## Target Users & Tenancy
@@ -94,7 +96,7 @@ pnpm db:seed          # seed demo tenant/data
 
 ## Build Order
 
-Follow `DEVELOPMENT_PLAN.md` — phases are dependency-ordered (foundation → fleet/driver core → loads/dispatch → tracking → money → compliance → portals → AI/automation → SaaS admin). Don't start a later-phase module while its dependencies are unbuilt.
+Scope lives in `Features.md` (update its checkboxes as features ship). Follow `DEVELOPMENT_PLAN.md` — phases are dependency-ordered (foundation → fleet/driver core → loads/dispatch → tracking → money → compliance → portals → AI/automation → SaaS admin). Don't start a later-phase module while its dependencies are unbuilt.
 
 ## Working Rules for Claude
 
