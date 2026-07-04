@@ -21,3 +21,6 @@ coverage/
 
 # prisma
 apps/api/prisma/*.db
+
+# typescript incremental
+*.tsbuildinfo
