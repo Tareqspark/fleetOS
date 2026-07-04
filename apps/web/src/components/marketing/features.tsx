@@ -16,7 +16,7 @@ import {
   Workflow,
   Bot,
 } from "lucide-react";
-import { FadeIn, SectionHeading } from "./motion";
+import { FadeIn } from "./motion";
 
 const features = [
   {
@@ -95,7 +95,7 @@ const features = [
 
 export function Features() {
   return (
-    <section id="platform" className="relative scroll-mt-20 py-28">
+    <section id="platform" className="relative scroll-mt-20 pb-28 pt-16">
       <div
         aria-hidden
         className="pointer-events-none absolute inset-0"
@@ -105,13 +105,7 @@ export function Features() {
         }}
       />
       <div className="relative mx-auto max-w-7xl px-6">
-        <SectionHeading
-          eyebrow="The Platform"
-          title="Everything your operation needs. Nothing bolted on."
-          subtitle="FleetOS was designed as one system from day one — every module shares the same data, the same map, and the same AI."
-        />
-
-        <div className="mt-16 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {features.map((f, i) => (
             <FadeIn key={f.title} delay={(i % 3) * 0.08}>
               <Link
