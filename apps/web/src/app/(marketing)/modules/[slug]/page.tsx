@@ -3,8 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowRight, ArrowLeft } from "lucide-react";
 import { marketingModules, getModule } from "@/lib/marketing-modules";
-import { MarketingNav } from "@/components/marketing/nav";
-import { FinalCta, MarketingFooter } from "@/components/marketing/final-cta";
+import { FinalCta } from "@/components/marketing/final-cta";
 import { FadeIn } from "@/components/marketing/motion";
 
 export function generateStaticParams() {
@@ -44,9 +43,7 @@ export default async function ModulePage({
   );
 
   return (
-    <div className="min-h-screen bg-[#05060f] text-white antialiased selection:bg-indigo-500/30">
-      <MarketingNav />
-      <main>
+    <>
         {/* Hero */}
         <section className="relative overflow-hidden pb-16 pt-36">
           <div
@@ -176,8 +173,6 @@ export default async function ModulePage({
         </section>
 
         <FinalCta />
-      </main>
-      <MarketingFooter />
-    </div>
+    </>
   );
 }

@@ -77,11 +77,17 @@ export function MarketingFooter() {
           modern trucking.
         </p>
         <div className="flex items-center gap-6 text-sm text-slate-500">
-          <a href="#platform" className="transition-colors hover:text-white">
+          <a href="/platform" className="transition-colors hover:text-white">
             Platform
           </a>
-          <a href="#pricing" className="transition-colors hover:text-white">
+          <a href="/modules" className="transition-colors hover:text-white">
+            Modules
+          </a>
+          <a href="/pricing" className="transition-colors hover:text-white">
             Pricing
+          </a>
+          <a href="/faq" className="transition-colors hover:text-white">
+            FAQ
           </a>
           <a
             href="mailto:hello@fleetos.ai"

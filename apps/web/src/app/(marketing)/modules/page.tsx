@@ -2,8 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { marketingModules } from "@/lib/marketing-modules";
-import { MarketingNav } from "@/components/marketing/nav";
-import { FinalCta, MarketingFooter } from "@/components/marketing/final-cta";
+import { FinalCta } from "@/components/marketing/final-cta";
 import { FadeIn } from "@/components/marketing/motion";
 
 export const metadata: Metadata = {
@@ -14,9 +13,7 @@ export const metadata: Metadata = {
 
 export default function ModulesIndexPage() {
   return (
-    <div className="min-h-screen bg-[#05060f] text-white antialiased selection:bg-indigo-500/30">
-      <MarketingNav />
-      <main>
+    <>
         <section className="relative overflow-hidden pb-16 pt-36">
           <div
             aria-hidden
@@ -76,8 +73,6 @@ export default function ModulesIndexPage() {
         </section>
 
         <FinalCta />
-      </main>
-      <MarketingFooter />
-    </div>
+    </>
   );
 }
