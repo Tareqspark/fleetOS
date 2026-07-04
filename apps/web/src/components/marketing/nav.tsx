@@ -6,11 +6,11 @@ import { Truck, Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const links = [
-  { href: "#platform", label: "Platform" },
-  { href: "#ai", label: "AI" },
-  { href: "#modules", label: "Modules" },
-  { href: "#pricing", label: "Pricing" },
-  { href: "#faq", label: "FAQ" },
+  { href: "/#platform", label: "Platform" },
+  { href: "/#ai", label: "AI" },
+  { href: "/modules", label: "Modules" },
+  { href: "/#pricing", label: "Pricing" },
+  { href: "/#faq", label: "FAQ" },
 ];
 
 export function MarketingNav() {
