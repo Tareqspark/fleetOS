@@ -6,7 +6,7 @@ FleetOS AI is an enterprise-grade, AI-powered Fleet Management ERP for the **US 
 
 Competitors to beat on UX and capability: Samsara, Motive, Geotab, Fleetio, AscendTMS.
 
-**`Features.md` is the complete, canonical feature list** — every module and feature with phase mapping and build status (checkboxes). Consult it before scoping any work; update its checkboxes when features ship. `DEVELOPMENT_PLAN.md` says *when*, `Features.md` says *what*.
+**`Features.md` is the complete, canonical feature list** — every module and feature with phase mapping and build status (checkboxes). Consult it before scoping any work; update its checkboxes when features ship. `PRODUCT.md` defines the product (vision, pricing, conventions, roadmap summary), `DEVELOPMENT_PLAN.md` says *when*, `Features.md` says *what*.
 
 **Current scope: WEB APP ONLY.** Mobile apps (driver app, etc.) are deferred to a later phase. Do not build React Native / mobile code unless explicitly asked. Design APIs so a mobile client can consume them later.
 
